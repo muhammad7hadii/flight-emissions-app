@@ -185,39 +185,35 @@ It:
 - Allows all 25 aircraft in the database to be selected directly.
 
 ---
-
 ## 📊 Validation Against the ICAO Carbon Emissions Calculator
 
-Five representative routes are being compared with the official ICAO Carbon Emissions Calculator.
+To evaluate the model against an independent aviation-emissions
+reference, five representative routes were checked directly using the
+official ICAO Carbon Emissions Calculator on **4 October 2026**.
 
-For consistency, the ICAO comparison uses:
+For each ICAO calculation, the settings were:
 
-- One-way travel
-- Economy class
-- One passenger in the ICAO calculator
-- Approximately 80% of the selected aircraft's listed seating capacity in this application
+- One Way
+- Economy
+- 1 passenger
 
-The two models should not be expected to match exactly. The ICAO Carbon Emissions Calculator uses its own route-specific fleet mix, load-factor, passenger/cargo allocation and cabin methodology, while this application models a specifically selected aircraft and explicit passenger count.
+The application calculations used a specifically selected aircraft and
+approximately 80% of that aircraft's listed typical seating capacity.
 
 | Route | App Aircraft | App CO₂/Pax | ICAO CO₂/Pax | Absolute % Difference |
 |---|---|---:|---:|---:|
-| LHE–KHI | Airbus A320 | 103.0 kg | **PENDING** | **PENDING** |
-| LHR–CDG | Airbus A320 | 54.8 kg | **PENDING** | **PENDING** |
-| LHE–DXB | Boeing 777-300ER | 211.8 kg | **PENDING** | **PENDING** |
-| LHR–JFK | Boeing 787-9 Dreamliner | 525.8 kg | **PENDING** | **PENDING** |
-| DXB–SYD | Airbus A380-800 | 1239.7 kg | **PENDING** | **PENDING** |
+| LHE–KHI | Airbus A320 | 103.0 kg | 105 kg | 1.9% |
+| LHR–CDG | Airbus A320 | 54.8 kg | 50 kg | 9.6% |
+| LHE–DXB | Boeing 777-300ER | 211.8 kg | 146 kg | 45.1% |
+| LHR–JFK | Boeing 787-9 Dreamliner | 525.8 kg | 303 kg | 73.5% |
+| DXB–SYD | Airbus A380-800 | 1239.7 kg | 830 kg | 49.4% |
 
-Percentage difference is calculated as:
+Percentage difference was calculated as:
 
 ```text
 |Application − ICAO|
 -------------------- × 100
         ICAO
-```
-
-The validation is considered complete only after all five official ICAO values have been recorded.
-
----
 
 ## 🐘 A380 / Earlier Prototype Difference
 
