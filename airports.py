@@ -1,3 +1,13 @@
+"""
+airports.py
+
+Airport coordinate database.
+
+Current coverage: 31 international airports.
+Coordinates are latitude/longitude pairs used for geodesic distance
+calculation.
+"""
+
 airports = {
     "LHE - Lahore": (31.5216, 74.4036),
     "KHI - Karachi": (24.9065, 67.1608),
@@ -42,5 +52,5 @@ airports = {
 
     "BKK - Bangkok": (13.6900, 100.7501),
 
-    "KUL - Kuala Lumpur": (2.7456, 101.7072)
+    "KUL - Kuala Lumpur": (2.7456, 101.7072),
 }
