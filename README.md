@@ -397,7 +397,11 @@ Changes:
 - Expanded the aircraft selector so all 25 database aircraft are accessible.
 - Added visible database counts for 31 airports, 4 airlines and 25 aircraft.
 - Documented the current A380/737 reference fuel-burn difference.
-- Added a five-route ICAO validation framework.
+- Completed five-route validation against the official ICAO Carbon
+  Emissions Calculator using LHE–KHI, LHR–CDG, LHE–DXB, LHR–JFK
+  and DXB–SYD.
+- Documented model differences ranging from 1.9% to 73.5% and
+  identified long-haul fuel estimation as an area for future improvement.
 - Separated development work from the stable deployed branch.
 
 The published research paper has **not** been changed.
@@ -426,3 +430,4 @@ The published research paper has **not** been changed.
 ---
 
 *This project is an educational research and estimation tool and is not intended for operational flight planning or regulatory emissions reporting.*
+
