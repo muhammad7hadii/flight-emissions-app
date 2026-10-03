@@ -83,13 +83,12 @@ VALIDATION_CASES = [
 # ICAO Carbon Emissions Calculator.
 
 ICAO_RESULTS = {
-    "LHE–KHI": None,
-    "LHR–CDG": None,
-    "LHE–DXB": None,
-    "LHR–JFK": None,
-    "DXB–SYD": None,
+    "LHE–KHI": 105,
+    "LHR–CDG": 50,
+    "LHE–DXB": 146,
+    "LHR–JFK": 303,
+    "DXB–SYD": 830,
 }
-
 
 def calculate_difference(app_value, icao_value):
     return (
